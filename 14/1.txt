@@ -1,0 +1,7 @@
+def greet():
+	firstname = input()
+	secondname = input()
+	print("Здравстуйте,", firstname, secondname)
+
+greet()
+print("End")

@@ -1,0 +1,9 @@
+def space_game(text):
+	c = len(text.split()) - 1
+	if c % 2 == 0:
+		print("Вы выйграли!")
+	else:
+		print("Вы проиграли")
+
+text = input()
+space_game(text)
