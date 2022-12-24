@@ -1,0 +1,9 @@
+try:
+    word = str(input())
+    num = int(input())
+    if num > 0:
+        print(word[num - 1])
+    else:
+        raise IndexError
+except IndexError:
+    print("ОШИБКА")
