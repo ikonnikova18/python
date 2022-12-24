@@ -1,0 +1,7 @@
+message = input()
+mass = []
+mass_str = str()
+for i in message:
+    mass.append(str(ord(i)))
+mass_str = ", ".join(mass)
+print(mass_str)
