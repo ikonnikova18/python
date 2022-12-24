@@ -1,0 +1,15 @@
+parol = input("Введите пароль: ")
+repeat_parol = input("Повторите ввод: ")
+while len(parol) < 8:
+    print("Короткий!")
+    parol = input("Введите пароль: ")
+    repeat_parol = input("Повторите ввод: ")
+while "123" in parol:
+    print("Простой!")
+    parol = input("Введите пароль: ")
+    repeat_parol = input("Повторите ввод: ")
+while repeat_parol != parol:
+    print("Различаются!")
+    parol = input("Введите пароль: ")
+    repeat_parol = input("Повторите ввод: ")
+print("ОК")

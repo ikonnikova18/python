@@ -1,0 +1,8 @@
+parol = input("Введите пароль: ")
+repeat_parol = input("Повторите ввод: ")
+if len(parol) < 8:
+    print("Короткий")
+elif repeat_parol != parol:
+    print("Различаются")
+else:
+    print("ОК")

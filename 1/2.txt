@@ -1,0 +1,5 @@
+slovo = input("Введите слово: ")
+if slovo == "Python":
+    print("Да")
+else:
+    print("Нет")

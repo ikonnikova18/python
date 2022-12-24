@@ -1,0 +1,4 @@
+words = input()
+sum = int(input())
+for i in range(sum):
+    print(words, end="\n")

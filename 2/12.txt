@@ -1,0 +1,4 @@
+stroka = input()
+cost_r = len(stroka) * 40 // 100
+cost_k = len(stroka) * 40 % 100
+print(str(cost_r) + " р. " + str(cost_k) + " коп.")

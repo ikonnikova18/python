@@ -1,0 +1,8 @@
+login = input("Укажите желаемый логин от электронный почты: ")
+backup_mail = input("Укажите резервный адрес электронной почты: ")
+if "@" not in login and "@" in backup_mail:
+    print("OK")
+elif "@" in login:
+    print("Некорректный логин")
+elif "@" not in backup_mail:
+    print("Некорректный адрес")

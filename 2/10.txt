@@ -1,0 +1,16 @@
+line1 = float(input())
+line2 = float(input())
+line3 = str(input())
+if line3 == "+":
+	print(line1 + line2)
+elif line3 == "-":
+	print(line1 - line2)
+elif line3 == "*":
+	print(line1 * line2)
+elif line2 != 0 and line3 == "/":
+	print(line1 / line2)
+else:
+	print("888888")
+
+
+

@@ -1,0 +1,7 @@
+temp = 0
+count = 0
+
+while temp < 22:
+    temp = float(input("Введите температуру"))
+    count += 1
+print(count//7)

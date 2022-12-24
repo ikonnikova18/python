@@ -1,0 +1,4 @@
+days = 2
+rabota = 3
+dlina = 1400
+print(dlina // (days * rabota))

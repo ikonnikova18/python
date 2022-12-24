@@ -1,0 +1,3 @@
+slovo = 'Ауууу!'
+print(slovo)
+print(slovo)

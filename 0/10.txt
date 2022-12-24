@@ -1,0 +1,6 @@
+slovo1 = input()
+slovo2 = input()
+slovo3 = input()
+print(slovo3)
+print(slovo2)
+print(slovo1)

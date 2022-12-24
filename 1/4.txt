@@ -1,0 +1,7 @@
+slovo1 = input()
+slovo2 = input()
+slovo3 = input()
+if (slovo1 == "раз" and slovo2 == "два" and slovo3 == "три") or (slovo1 == "1" and slovo2 == "2" and slovo3 == "3"):
+    print("Гори")
+else:
+    print("Не гори")
