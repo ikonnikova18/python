@@ -1,0 +1,18 @@
+import random
+n = 0
+number_1 = 1
+number_2 = 1000
+while n < 10:
+    n += 1
+    number = random.randint(number_1, number_2)
+    print(number)
+    answer = input("Enter result")
+    if answer == ">":
+        number_1 = number + 1
+    elif answer == "<":
+        number_2 = number - 1
+    else:
+        print("Вы выйграли!")
+        break
+else:
+    print("Вы проиграли"
