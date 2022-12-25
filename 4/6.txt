@@ -1,0 +1,7 @@
+number = int(input())
+mass = []
+mass_str = str()
+for i in range(number + 1):
+    mass.append(str(i))
+mass_str = " ".join(mass)
+print(mass_str)
