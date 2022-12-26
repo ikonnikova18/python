@@ -1,0 +1,14 @@
+english = set()
+german = set()
+result = set()
+sum1 = int(input())
+sum2 = int(input())
+for i in range(sum1):
+    english.add(input())
+for i in range(sum2):
+    german.add(input())
+result = english ^ german
+if len(result):
+    print(len(result))
+else:
+    print("NO")
