@@ -1,0 +1,13 @@
+result = set()
+m = int(input())
+n = int(input())
+for i in range(m + n):
+    word = input()
+    if word in result:
+        result.discard(word)
+    else:
+        result.add(word)
+if len(result):
+    print(len(result))
+else:
+    print("NO")
