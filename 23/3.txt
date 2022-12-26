@@ -1,0 +1,35 @@
+from PIL import Image, ImageDraw
+
+
+def picture(file_name, width, height, sky_color='#87CEEB',
+            ocean_color='#017B92', boat_color='#874535',
+            sail_color='#FFFFFF', sun_color='#FFCF40'):
+    im = Image.new("RGB", (width, height))
+    drawer = ImageDraw.Draw(im)
+
+    drawer.rectangle(((0, 0), (width, int(height * .8))), sky_color)
+    drawer.rectangle(((0, int(height * .8)), (width, height)),
+                     ocean_color)
+    drawer.ellipse((
+     (int(.8 * width), -int(.2 * height)),
+     (int(.2 * width), int(.2 * height))),
+                   sun_color)
+
+    drawer.polygon(((int(.25 * width), int(height * .65)),
+                    (int(.49 * width), int(height * .65)),
+                    (int(.49 * width), int(height * .3)),
+                    (int(.51 * width), int(height * .3)),
+                    (int(.51 * width), int(height * .65)),
+                    (int(.75 * width), int(height * .65)),
+                    (int(.7 * width), int(height * .85)),
+                    (int(.3 * width), int(height * .85))),
+                   boat_color)
+    drawer.polygon(((int(.51 * width + 1), int(height * .3)),
+                    (int(.66 * width + 1), int(height * .45)),
+                    (int(.51 * width + 1), int(height * .6))),
+                    sail_color)
+   
+    im.save(file_name)
+
+
+picture('test.bmp', 1000, 800)
