@@ -1,0 +1,7 @@
+n = int(input())
+soldiers = [input() for i in range(n)]
+k = int(input())
+m = int(input())
+for j in range(m):
+    del soldiers[k - 1::k]
+print('\n'.join(soldiers))
