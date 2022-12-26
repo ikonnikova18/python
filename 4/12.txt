@@ -1,0 +1,8 @@
+counter = int(input())
+summa = 0
+for i in range(counter):
+    if i%2:
+        summa += int(input())
+    else:
+        summa -= int(input())
+print(abs(summa))
