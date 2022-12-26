@@ -1,0 +1,16 @@
+first_num = set()
+second_num = set()
+a = input()
+while a != '':
+    first_num.add(a)
+    a = input()
+a = input()
+while a != '':
+    second_num.add(a)
+    a = input()
+intersection = first_num & second_num
+if intersection:
+    for i in intersection:
+        print(i)
+else:
+    print('EMPTY')
