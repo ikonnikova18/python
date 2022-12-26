@@ -1,0 +1,8 @@
+city_set = set()
+num = int(input())
+for i in range(num):
+    city_set.add(input())
+if input() not in city_set:
+    print('OK')
+else:
+    print('TRY ANOTHER')
