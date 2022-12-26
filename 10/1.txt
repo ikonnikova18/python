@@ -1,0 +1,16 @@
+number = int(input())
+mass = []
+p = 0
+for i in range(number):
+    numbers = int(input())
+    mass.append(numbers)
+product = int(input())
+for i in range(number):
+    for a in range(i + 1, number):
+        if product == mass[i] * mass[a]:
+            p = 1
+    if  p == 1:
+        print("ДА")
+    else:
+        print("НЕТ")
+        
