@@ -1,0 +1,5 @@
+n = int(input())   
+s = list()
+for i in range(n):
+    word = input()
+    print(word)
