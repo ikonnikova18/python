@@ -1,0 +1,7 @@
+n = int(input()) 
+mass_recipe = []
+for i in range(n):
+    line = input()
+    if "лук" not in line:
+        mass_recipe.append(line) 
+print(", ".join(mass_recipe))
