@@ -1,0 +1,9 @@
+text = input()
+eagle = tails = 0
+for i in range(len(text)):
+    if text[i] == "о":
+        eagle += 1
+    else:
+        tails = eagle
+        eagle = 0
+print(tails)
