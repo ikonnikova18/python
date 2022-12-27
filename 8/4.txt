@@ -1,0 +1,9 @@
+number = int(input())
+mass = []
+board = "ABCDEFGHI"
+if number < 10:
+    mass = [[j + 1 for j in range(9)] for i in range(9)]
+for i in range(number - 1, -1, -1):
+    for j in range(number):
+        print(board[j] + str(mass[j][i]), end=' ')
+    print()
