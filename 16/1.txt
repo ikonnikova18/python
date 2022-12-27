@@ -1,0 +1,13 @@
+pi = 3.14159
+def circle_length(radius: int):
+    return 2 * pi * radius
+    
+    
+def circle_area(radius: int):
+    return pi * radius ** 2
+    
+    
+def main():
+    radius = input()
+    print(circle_length(radius))
+    print(circle_area(radius))
