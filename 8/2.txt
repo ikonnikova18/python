@@ -1,0 +1,7 @@
+word1 = input()
+word2 = input()
+bulls = cows = 0
+for i in zip(word1, word2):
+    if i[0] == i[1]: bulls += 1
+    elif i[0] in word2: cows += 1
+print(bulls,cows)
