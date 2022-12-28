@@ -1,0 +1,17 @@
+def letter(name, place, data, email):
+    return f'''To: {email}
+Здравствуйте, {name}!
+Были бы рады видеть вас на встрече начинающих программистов в {place}е, которая пройдет {data}.'''
+    
+
+name = 'Афанасий'    
+place = 'Нефтекамск'
+date = '23.03.2023'
+email = 'afonasii@mail.ru'
+print(letter(name, place, date, email))
+
+name = 'Виктория'
+place = 'Нефтекамск'
+date = '23.03.2023'
+email = 'viktoria@mail.ru'
+print(letter(name, place, date, email))
