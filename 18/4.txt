@@ -1,0 +1,7 @@
+def partial_sums(*rest):
+    result = [0]
+    for elem in rest:
+        mass = result[-1]
+        result.append(mass + elem)
+    return result
+print(partial_sums(13))
