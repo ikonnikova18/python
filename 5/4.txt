@@ -1,0 +1,7 @@
+num = int(input())
+for i in range(num):
+    text = input()
+if "Кот" or "кот" in text:
+    print("Мяу!")
+else:
+    print("Нет!")
