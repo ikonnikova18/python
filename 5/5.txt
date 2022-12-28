@@ -1,0 +1,15 @@
+text = False
+count = 0
+line = ''
+while line != 'СТОП':
+    line = input()
+    count += 1
+    while not(text):
+        if ('Кот' in line) or ('кот' in line):
+            text = True
+            number = count
+        break
+if text:
+    print(number)
+else:
+    print(-1)
