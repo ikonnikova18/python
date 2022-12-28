@@ -1,0 +1,12 @@
+answer = False
+sum = count = 0
+while True:
+    count += 1
+    number = int(input())
+    sum += number
+    if number == 0:
+        print(result)
+        break
+    if sum >= 10 and not answer:
+        result = count
+        answer = True
