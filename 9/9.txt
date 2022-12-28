@@ -1,0 +1,14 @@
+a = int(input())
+mass = []
+mass2 = []
+for _ in range(a):
+    line = int(input())
+    mass.append(line)
+    mass2.append(line)
+for i in range(a):
+    mass2[i] = mass2[i] * 3
+for i in range(a):
+    print(mass[i])
+print()
+for i in range(a):
+    print(mass2[i])
