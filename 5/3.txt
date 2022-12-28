@@ -1,0 +1,17 @@
+k = 0
+line = str(input())
+flag = 0
+while line != "СТОП":
+    k += 1
+    if ("Кот" in line or "кот" in line)\
+    and flag == 0:
+        flag = 1
+        temp = k
+        line = str(input())
+    else:
+        line = str(input())
+        continue
+if flag == 1:
+    print(temp)
+else:
+    print("-1")
