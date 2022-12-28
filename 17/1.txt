@@ -1,13 +1,9 @@
 phareses = list()
-
-
 def parrot(phrase):
     if phrase in phareses:
         print(phrase)
     else:
         phareses.append(phrase)
-
-
 parrot("Привет!")
 parrot("Привет!")
 parrot("Как дела?")
