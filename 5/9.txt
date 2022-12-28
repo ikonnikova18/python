@@ -1,0 +1,13 @@
+number = int(input())
+line = ""
+text = False
+for i in range(number):
+    word = input()
+    if ("Кот" in word or "кот" in word) and not text:
+        line = "МЯУ"
+        text = True
+    elif ("Пёс" in word or "пёс" in word) and text:
+        text = False
+    elif not text:
+        line = "НЕТ"
+print(line)
